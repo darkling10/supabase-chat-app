@@ -35,7 +35,7 @@ const mapChat = (
   unreadCount,
   phone: chat?.participants[0]?.phone || undefined,
   participants: chat?.participants.map(mapUser),
-  tags: chat?.tags?.map((tag) => ({
+  tags: chat.tags?.map((tag) => ({
     type: tag.type,
     label: tag.label,
   })),
